@@ -15,6 +15,7 @@ const (
 	defaultName = "world"
 )
 
+// make sure to edit the addr url below, i had my code deployed to Azure Container Apps, for local testing you can use localhost
 var (
 	addr = flag.String("addr", "websocket-grpc-app-witty.wittyhill-7980bc95.azurecontainerapps-test.io:9091", "the address to connect to")
 	name = flag.String("name", defaultName, "Name to greet")
